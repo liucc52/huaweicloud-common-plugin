@@ -1,0 +1,38 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:section title="Job Status Plugin Config">
+    <f:entry title="Notify Method" description="The Method of Notify(Http or Kafka)" field="notifyMethod">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Octopus Api Gateway Url" description="The Url of Octopus Api Gateway" field="octopusApiGatewayUrl">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Octopus Api Gateway Token" description="The Token of Octopus Api Gateway" field="octopusApiGatewayToken">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Kafka Server Url" description="The Url of Kafka Server Cluster" field="kafkaServerUrl">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Job Status Kafka Topic" description="The kafka topic of job status" field="jobStatusTopic">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Iam Url" description="Iam Url" field="iamUrl">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Encode User Name" description="Encode User Name" field="encodeUserName">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Encode Password" description="Encode Password" field="encodePwd">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Octopus Edge Url" description="Octopus Edge Url" field="octopusEdgeUrl">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Octopus AK" description="Octopus Edge AK" field="ak">
+            <f:password/>
+    </f:entry>
+    <f:entry title="Octopus SK" description="Octopus Edge SK" field="sk">
+            <f:password/>
+    </f:entry>
+  </f:section>
+</j:jelly>
